@@ -10,9 +10,10 @@ header {
 
 main ul {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 48px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8em 1.8rem;
 }
 
 main li {
@@ -21,7 +22,11 @@ main li {
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     overflow: hidden;
-    width: 500px;
+    
+}
+
+main li:nth-of-type(3) {
+    grid-column: span 2;
 }
 
 main li img {
