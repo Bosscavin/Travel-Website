@@ -1,6 +1,7 @@
 body {
     background: linear-gradient(40deg, rgb(77,77,77),
     rgb(58,68,58));
+    color: rgb(68, 68, 68);
 }
 
 header {
@@ -10,11 +11,17 @@ header {
 main ul {
     width: 80%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 main li {
     display: flex;
     background-color: whitesmoke;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    overflow: hidden;
+    width: 500px;
 }
 
 main li img {
@@ -23,6 +30,25 @@ main li img {
     object-fit: cover;
 }
 
-.item-container {
+.item-content {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.actions {
+    text-align: right;
+}
+
+.actions a {
+    text-decoration: none;
+    padding: 6px;
+    color: rgb(22, 211, 228);
+    border-radius: 6px;
+}
+
+.actions a:hover,
+.actions a:focus {
+    background-color: rgb(235, 253, 255);
 }
